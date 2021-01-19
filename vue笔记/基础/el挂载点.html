@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-基础</title>
+</head>
+
+<body>
+    <!--不显示  -->
+    {{message}}
+    <div id="app" class="app">
+        <!-- 两个都显示 在el标签命中的内部都可以用data显示-->
+        {{message}}
+        <span>{{ message }}</span>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            // el:".app",
+            // el:"div",
+            data: {
+                message: "黑马程序员"
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button v-show='index!=0' @click='BackShow'>上一张</button>
+        <img :src="imgsSrc[index]" alt="">
+        <button v-show='index<imgsSrc.length-1' @click='NextShow'>下一张</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script></script>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                index:0,
+                imgsSrc:[
+                "img\\美女1.jpg",
+                "img\\美女2.jpg",
+                "img\\美女3.jpg",
+                "img\\美女4.jpg",
+                ],
+                // Back:false,
+                // Next:true,
+            },
+            methods:{
+                BackShow:function(){
+                this.index--;
+                //    if(this.index!=0){this.Back=true;}
+                //    else{this.Back=false;}      
+                //    if(this.index<this.imgsSrc.length-1){this.Next=true;}
+                //     else{this.Next=false;}
+                },
+                NextShow:function(){
+                    this.index++;
+                //     if(this.index<this.imgsSrc.length-1){this.Next=true;}
+                //     else{this.Next=false;}
+                //     if(this.index!=0){this.Back=true;}
+                //    else{this.Back=false;}  
+                    
+                },
+            }
+        })
+    </script>
+</body>
+</html>

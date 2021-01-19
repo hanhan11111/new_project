@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <template id="tmp">
+                <p>1111</p>
+                
+                <!-- <MyComp></MyComp> -->
+
+        </template>
+
+        <template id="tmp1">
+            <div>
+                <h1>{{title}}</h1>
+            </div>
+        </template>
+
+        <template id="tmp2">
+            <div>
+                <h1>{{title}}</h1>
+                <h1>{{demo}}</h1>
+                <h1>1111</h1>
+                <h1>{{aaaa}}</h1>
+            </div>
+        </template>
+
+    </div>
+
+    <script src="../Vue.js"></script>
+    <script>
+        var MyComp = {
+            data(){
+                return{
+                    title:'11111',
+                };
+            },
+            template:`#tmp1`,
+        };
+
+         var MyComp2 = {
+            data(){
+                return{
+                    title:'2222',
+                    a:5,
+                };
+            },
+            components: {
+                MyComp,
+            },
+            props: ["title","demo","aaaa"],
+            template:`#tmp2`,
+        };
+
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                a:5,
+            },
+            components: {
+                MyComp,
+                MyComp2,
+            },
+            template:`
+            <div>
+                <MyComp></MyComp>
+                <MyComp2 title = '3333' :demo = '4444' :aaaa = 'a'></MyComp2>
+            </div>
+                `,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import 'reset.css';
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#headMessage li{
+    float: left;
+    line-height: 35px;
+    padding: 6px;
+    /* 换行符的距离大小由字体大小控制 解决换行符距离问题 */
+    font-size: 0;
+}
+#headMessage a{
+    color: #6c6c6c;
+    /* 给文字设置大小 解决li中font-size：0 */
+    font-size: 16px;
+}
+#headMessage a:hover{
+    color: #f40;
+}
+#headMessage a.login{
+    color: #f22e00;
+}
+#headMessage span{
+    font-size: 12px;
+
+}
+#headMessage span.arrow{
+    margin-left: 7px;
+}
+#headMessage strong{
+    font-size: 12px;
+    color: #f33e00;
+}
+#headMessage li span.store{
+    color: #9c9c9c;
+}
+#headMessage li.line{
+    font-size: 12px;
+    color: #dddddd;
+    padding: 5px;
+}
+
+/* 头部广告 */
+#headAd{
+    background-color: #f12f04;
+}
+#headAd .go{
+    display: block;
+    padding: 10px 10px 10px 15px;
+}
+#headAd .go img{
+    width: 80px;
+    height: 80px;
+}
+#headAd li{
+    margin-top: 10px;
+}
+#headAd li img{
+    margin-left: 10px;
+    width: 200px;
+}
+
+/* 头部搜索 */
+#headSrarch{
+    background-color: #fff;
+    padding: 10px 0;
+}
+#headSrarch h1 a{
+    background-image: url(../images/taobaoh1.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 190px;
+    height: 58px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+ #headSrarch .searchTab li{
+    float: left;
+     color: #f40;
+     margin-right: 4px;
+     width: 36px;
+     line-height: 22px;
+     /* background-color: aqua; */
+    text-align: center;
+    height: 22px;
+    cursor: pointer;
+
+}
+ #headSrarch .searchTab{
+     height: 22px;
+ }
+
+ #headSrarch .searchTab li:hover{
+     display: block;
+     background-color: #f40;
+     color: aliceblue;
+     font-weight: bolder;
+     border-radius: 5px 5px 0 0;
+     /* 渐变 */
+     background-image: linear-gradient(to right,#ff9000,#ff5000);
+
+ } 
+ #headSrarch .search{
+     width: 680px;
+     margin:0 auto;
+ }
+
+ #headSrarch .searchContent{
+     height: 40px;
+ }
+ #headSrarch .searchBox input{
+    width: 490px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    text-indent: 10px;
+    outline:none;
+
+    position:absolute;
+    z-index: 2;
+    background-color: transparent;
+
+ }
+ #headSrarch .searchBox input:hover{
+    border: none;
+    text-indent: 10px;
+ }
+ #headSrarch .searchBox{
+     width:554px;
+     height: 40px;
+     box-sizing: border-box;
+     border: 2px solid #ff5000;
+     border-right: none;
+     border-radius: 20px 0 0 20px;
+     overflow: hidden;
+     position: relative;
+ }
+ #headSrarch .placeholder{
+     position: absolute;
+     top: 6px;
+     left: 14px;
+     color: #9c9c9c;
+     font-size: 12px;
+     padding-left: 8px;
+ }
+ #headSrarch .imgSearch{
+    position:absolute;
+    right: 20px;
+    top: -2px;
+    font-size: 28px;
+    color: #9c9c9c;
+    cursor: pointer;
+ }
+ #headSrarch .searchContent .btn{
+     width: 74px;
+     height: 40px;
+ }
+#nav .ul-nav li{
+    float: left;
+    margin-left: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+#nav .ul-nav{
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+}
+
+#nav span{
+    width: 190px;
+    height: 30px;
+    background-color: #F50;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
